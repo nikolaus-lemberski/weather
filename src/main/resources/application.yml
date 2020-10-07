@@ -1,6 +1,6 @@
 spring:
   application:
-    name: weather-service
+    name: weather
   cloud:
     discovery:
       enabled: false
