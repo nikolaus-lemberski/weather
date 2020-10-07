@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: weather-service
+  cloud:
+    discovery:
+      enabled: false
+
+weather:
+  api:
+    endpoint: https://api.openweathermap.org/data/2.5/weather
+    key: DUMMY
+
+---
+spring:
+  profiles: cloud
+  cloud:
+    discovery:
+      enabled: true
+    services:
+      registrationMethod: direct
+
